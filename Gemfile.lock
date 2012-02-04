@@ -1,20 +1,51 @@
+GIT
+  remote: https://github.com/choxi/RubyCop.git
+  revision: 5ff5f55425ae32863c97046bc3c73b6527f3245a
+  specs:
+    ruby_cop (1.0.0)
+
 GEM
   remote: http://rubygems.org/
+  remote: http://rubygems.org/
   specs:
+    daemons (1.1.4)
     diff-lcs (1.1.3)
     eventmachine (0.12.10)
+    fakefs (0.4.0)
     grit (2.4.1)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
     mime-types (1.17.2)
     rack (1.4.1)
+    rack-test (0.6.1)
+      rack (>= 1.0)
+    redis (2.2.2)
+    rspec (2.8.0)
+      rspec-core (~> 2.8.0)
+      rspec-expectations (~> 2.8.0)
+      rspec-mocks (~> 2.8.0)
+    rspec-core (2.8.0)
+    rspec-expectations (2.8.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.8.0)
     sinatra (1.0)
       rack (>= 1.0)
+    thin (1.3.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  daemons (= 1.1.4)
   eventmachine
+  fakefs
   grit
+  rack-test
+  redis
+  rspec
+  ruby_cop!
   sinatra
+  thin
